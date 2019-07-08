@@ -1,0 +1,57 @@
+name: manage
+about: dot file manager
+args:
+  - target:
+      short: t
+      long: target
+      value_name: PATH
+      help: target PATH to work on
+      takes_value: true
+  - upper:
+      short: u
+      long: upper
+      value_name: PATH
+      help: upper PATH to symlink to
+      takes_value: true
+  - config:
+      short: c
+      long: config
+      value_name: PATH
+      help: use PATH for config
+      takes_value: true
+  - verbose:
+      short: v
+      help: set levels of verbose, max used 2
+      multiple: true
+  - dryrun:
+      short: D
+      long: dryrun
+      help: print what would happen without executing
+  - make:
+      short: m
+      long: make
+      help: make symbolic links
+      conflicts_with:
+        - remake
+        - delete
+  - remake:
+      short: r
+      long: remake
+      help: remake symbolic links
+      long_help: remake symbolic links deleting links owned in any under dir
+      conflicts_with:
+        - make
+        - delete
+  - delete:
+      short: d
+      long: delete
+      help: delete symbolic links
+      conflicts_with:
+        - make
+        - remake
+  - giturl:
+      short: g
+      long: giturl
+      help: the git url to use
+      value_name: URL
+      takes_value: true

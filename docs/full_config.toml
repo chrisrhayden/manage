@@ -1,0 +1,23 @@
+[base_vars]
+# will default to HOME
+# base = '/other/base/path'
+# will default to base
+# upper_dir = '/other/base/path'
+
+# no default
+under_dir = '.dots'
+
+# git_url = ''
+
+[filter_rules]
+# default will be keyfile
+filter_type = 'hostname'
+# will default to auto the beginning letter of the found key file or the first
+# letter of the hostname
+# selection_type = 'auto'
+
+[Monolith]
+file_patterns = ['*_all', '*_M']
+
+[Odimm]
+file_patterns = ['*_all', '*_O']

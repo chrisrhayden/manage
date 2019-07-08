@@ -1,0 +1,12 @@
+[package]
+name = "manage"
+version = "0.1.0"
+authors = ["chris <chrisrhayden@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+tempfile = "*"
+toml = "*"
+git2 = "*"
+clap = {version = "2", features = ["yaml"]}
+serde = { version = "1", features = ["derive"] }
