@@ -1,8 +1,8 @@
 # first
 * git management
-    - clone ✓
-    - add ✗
-    - pull / push ✗
+    - clone [x]
+    - add [ ]
+    - pull / push [ ]
     - basic conflict resolution, like clone the repo if its newer,
         moving old to old_DIR
 * add cli filters
